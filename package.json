@@ -1,6 +1,6 @@
 {
   "name": "zignis-plugin-read-extend-format-wechat",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index.js",
   "license": "MIT",
   "peerDependencies": {
