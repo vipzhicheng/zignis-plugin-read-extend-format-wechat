@@ -15,6 +15,8 @@ export const hook_read_format = {
     const app = new Koa()
     var router = new Router();
 
+    markdown = markdown || '# ' // 如果为空会有默认帮助文档
+
     router.get('/proxy/(.*)', async (ctx, next) => {
       const proxyUrl = ctx.request.url.substring(7)
       return axios({
