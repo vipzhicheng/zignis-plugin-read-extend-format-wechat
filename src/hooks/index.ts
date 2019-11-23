@@ -10,6 +10,14 @@ import chalk from 'chalk'
 
 import axios from 'axios'
 
+/**
+ * 实现钩子： read_define_format
+ * 定义支持的格式
+ */
+export const hook_read_define_format = {
+  wechat: '基于 Markdown 的微信公众号文章编辑器'
+}
+
 export const hook_read_format = {
   wechat: async ({ title, markdown, converted, argv }) => {
     const app = new Koa()
